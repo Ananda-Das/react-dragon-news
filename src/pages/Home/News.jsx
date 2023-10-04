@@ -26,16 +26,17 @@ const News = ({ news }) => {
         </div>
       </div>
       {/* author-card-end */}
+
+      {/* news-card-start  */}
       <div>
         <h1 className="text-2xl">{title}</h1>
         <img src={image_url} alt="" />
         <p>
             {
-                details.length>200 ? <p>{details.slice(0,200)} <Link to={`/news/${_id}`} className="text-blue-500 underline">Read More...</Link></p> : <p>{details}</p>
+                details.length>200 ? <p>{details.slice(0,200)}  <Link to={`/news/${_id}`} className="text-blue-500 underline">Read More...</Link></p> : <p>{details}</p>
         }
         </p>
       </div>
-      {/* news-card-start  */}
 
       {/* news-card-end  */}
     </div>
